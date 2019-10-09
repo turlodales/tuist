@@ -67,6 +67,10 @@ public final class MockFileHandler: FileHandling {
     public func write(_ content: String, path: AbsolutePath, atomically: Bool) throws {
         return try fileHandler.write(content, path: path, atomically: atomically)
     }
+    
+    public func locateDirectoryTraversingParents(from: AbsolutePath, path: String) -> AbsolutePath? {
+        return fileHandler.locateDirectoryTraversingParents(from: from, path: path)
+    }
 }
 
 extension MockFileHandler {
