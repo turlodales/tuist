@@ -2,7 +2,7 @@
 
 source "https://rubygems.org"
 
-gem "cucumber", "~> 6.0"
+gem "cucumber", "~> 7.1"
 gem "rake", "~> 13.0"
 gem "simctl", "~> 1.6"
 gem "google-cloud-storage", "~> 1.31"
